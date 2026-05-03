@@ -132,15 +132,14 @@ outputs/时间戳_项目名/
 
 ## ⚠️ 注意事项
 
-* `.env` 文件不会上传到 GitHub（已加入 `.gitignore`）
-* 请妥善保管 API Key
+* 请妥善保管您的 API Key
 * 首次运行建议使用简单需求测试
 
 ---
 
 ## 📌 项目定位
 
-MiniCode 不是一个完整产品，而是一个：
+MiniCode 现在不是一个完整产品，而是一个：
 
 > 👉 面向 Multi-Agent AI 编程范式的最小原型系统
 
