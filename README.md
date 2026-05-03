@@ -1,6 +1,6 @@
 # MiniCode
 
-MiniCode 是一个以最小可行形式（MVP）实现的 **Multi-Agent 驱动 AI Coding Agent 系统**。
+MiniCode 是一个以最小可行形式（MVP）实现的 **Multi-Agent 驱动 AI Coding Agent 工具**。
 
 它模拟一个完整的软件开发团队（产品经理 / 架构师 / 工程师），
 将用户的自然语言需求自动转化为可运行的项目代码。
@@ -46,7 +46,7 @@ pip install -r requirements.txt
 
 ### 4. 配置环境变量
 
-在项目根目录创建 `.env` 文件：
+在项目根目录 `.env` 文件中填入你的大模型API KEY：
 
 ```env
 OPENAI_API_KEY=你的API_KEY
