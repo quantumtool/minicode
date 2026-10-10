@@ -28,11 +28,11 @@ This creates a wheel for `pip` installation and a source distribution in `dist/`
 Tag the reviewed source commit and push the tag:
 
 ```bash
-git tag -a v0.2.0 -m "MiniCode 0.2.0" <reviewed-commit>
-git push origin v0.2.0
+git tag -a minicode-v0.2.0 -m "MiniCode 0.2.0" <reviewed-commit>
+git push origin minicode-v0.2.0
 ```
 
-On GitHub, open **Releases → Draft a new release**, select tag `v0.2.0`, and attach these files from `dist/`:
+On GitHub, open **Releases → Draft a new release**, select tag `minicode-v0.2.0`, and attach these files from `dist/`:
 
 - `minicode_agent-0.2.0-py3-none-any.whl` — install with `python -m pip install <downloaded-wheel>`.
 - `minicode_agent-0.2.0.tar.gz` — source distribution for Python packaging tools.

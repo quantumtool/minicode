@@ -31,7 +31,7 @@ cp .env.example .env
 After `v0.2.0` is published, install its universal Python wheel directly (Python 3.11+):
 
 ```bash
-python -m pip install "https://github.com/quantumtool/minicode/releases/download/v0.2.0/minicode_agent-0.2.0-py3-none-any.whl"
+python -m pip install "https://github.com/quantumtool/minicode/releases/download/minicode-v0.2.0/minicode_agent-0.2.0-py3-none-any.whl"
 ```
 
 Configure your model provider credentials as described below, then run `minicode --help`. Windows users can run the same install command in PowerShell.

@@ -47,7 +47,7 @@ Copy-Item .env.example .env
 发布 `v0.2.0` 后，也可以直接安装 GitHub Release 中的通用 Python wheel（Python 3.11+）：
 
 ```bash
-python -m pip install "https://github.com/quantumtool/minicode/releases/download/v0.2.0/minicode_agent-0.2.0-py3-none-any.whl"
+python -m pip install "https://github.com/quantumtool/minicode/releases/download/minicode-v0.2.0/minicode_agent-0.2.0-py3-none-any.whl"
 ```
 
 安装后按下方说明配置模型凭据，然后运行 `minicode --help` 查看命令。Windows 用户可以在 PowerShell 中执行同一条安装命令。
