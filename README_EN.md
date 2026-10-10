@@ -26,6 +26,16 @@ python -m pip install -r requirements.txt
 cp .env.example .env
 ```
 
+### Install the GitHub Release wheel
+
+After `v0.2.0` is published, install its universal Python wheel directly (Python 3.11+):
+
+```bash
+python -m pip install "https://github.com/quantumtool/minicode/releases/download/v0.2.0/minicode_agent-0.2.0-py3-none-any.whl"
+```
+
+Configure your model provider credentials as described below, then run `minicode --help`. Windows users can run the same install command in PowerShell.
+
 Set `MINICODE_PROVIDER` to `openai` or `anthropic`, set `MINICODE_MODEL` to a model available to your account, then provide `OPENAI_API_KEY` or `ANTHROPIC_API_KEY` in a local `.env` file. MiniCode reads `.env` from the current directory, `~/.minicode/.env`, or the source checkout root; `MINICODE_ENV_FILE` selects a specific file. Existing process environment variables take precedence. OpenAI uses Responses by default. Set `MINICODE_OPENAI_API=chat_completions` and `OPENAI_BASE_URL` for compatible endpoints that do not support Responses.
 
 ## Run

@@ -42,6 +42,16 @@ python -m pip install -r requirements.txt
 Copy-Item .env.example .env
 ```
 
+### 从 GitHub 下载 wheel 安装
+
+发布 `v0.2.0` 后，也可以直接安装 GitHub Release 中的通用 Python wheel（Python 3.11+）：
+
+```bash
+python -m pip install "https://github.com/quantumtool/minicode/releases/download/v0.2.0/minicode_agent-0.2.0-py3-none-any.whl"
+```
+
+安装后按下方说明配置模型凭据，然后运行 `minicode --help` 查看命令。Windows 用户可以在 PowerShell 中执行同一条安装命令。
+
 ## 配置模型
 
 编辑本机的 `.env`，不要把真实密钥提交到 Git。MiniCode 依次读取当前工作目录的 `.env`、`~/.minicode/.env` 和源码仓库根目录的 `.env`；也可以用 `MINICODE_ENV_FILE` 指定单独配置文件。已有进程环境变量优先于文件内容。
