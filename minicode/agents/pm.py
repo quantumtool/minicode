@@ -2,10 +2,11 @@ from minicode.agents.base import BaseAgent
 
 
 class PMAgent(BaseAgent):
-    def __init__(self):
+    def __init__(self, provider):
         super().__init__(
             name="产品经理 Agent",
-            role="负责把用户的模糊想法整理成清晰、可执行的产品需求文档。"
+            role="负责把用户的想法整理成清晰、可执行的产品需求文档。",
+            provider=provider,
         )
 
     def run(self, idea: str) -> str:

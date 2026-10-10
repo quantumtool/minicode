@@ -1,4 +1,25 @@
-.venv/
-__pycache__/
+# Credentials and local configuration
 .env
+.env.*
+!.env.example
+
+# Python environments and generated files
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.DS_Store
+
+# Local agent state and generated projects
+.minicode/cache/
+.minicode/logs/
+.minicode/sessions/
+.minicode/settings.local.json
 outputs/
+
+# Editors
+.vscode/
+.idea/

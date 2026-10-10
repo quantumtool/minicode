@@ -2,10 +2,11 @@ from minicode.agents.base import BaseAgent
 
 
 class ArchitectAgent(BaseAgent):
-    def __init__(self):
+    def __init__(self, provider):
         super().__init__(
             name="架构师 Agent",
-            role="负责根据产品需求设计技术架构、目录结构和开发方案。"
+            role="负责根据产品需求设计简洁、可运行的技术架构和开发方案。",
+            provider=provider,
         )
 
     def run(self, prd: str) -> str:

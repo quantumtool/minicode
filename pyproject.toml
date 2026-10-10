@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "minicode-agent"
+version = "0.2.0"
+description = "A local multi-agent coding assistant with explicit workspace approvals"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+  "anthropic>=0.49.0",
+  "openai>=1.66.0",
+  "python-dotenv>=1.0.1",
+  "rich>=13.7.0",
+  "typer>=0.12.0",
+]
+
+[project.scripts]
+minicode = "minicode.cli:app"
+
+[tool.setuptools.packages.find]
+include = ["minicode*"]
